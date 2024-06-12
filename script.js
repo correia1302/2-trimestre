@@ -11,11 +11,12 @@ const perguntas=[
        {
        texto: "sim",
     afirmação: "afirmação",
-       }
-         
+       },
+       {   
        texto: "não",
-    ]
-  }
+    afirmação: "afirmação",
+       },
+  ]
 {
      enunciado: "você prefere pizza ou lasanha?",
      alternativas:[
