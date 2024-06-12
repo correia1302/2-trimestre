@@ -8,36 +8,36 @@ const perguntas=[
   {
      enunciado: "você gosta de ir ao cinema?",
      alternativas:[
-       "sim",
-       "não",
+       texto: "sim",
+       texto: "não",
     ]
   }
 {
      enunciado: "você prefere pizza ou lasanha?",
      alternativas:[
-       "lasanha",
-       "pizza",
+      texto: "lasanha",
+       texto: "pizza",
     ]
   }
 {
      enunciado: "você gosta de futebol?",
      alternativas:[
-       "sim",
-       "não",
+       texto: "sim",
+       texto: "não",
     ]
   }
 {
      enunciado: "você tem filhos?",
      alternativas:[
-       "sim",
-       "não",
+       texto: "sim",
+       texto: "não",
     ]
   }
 {
      enunciado: "você tem animais de estimação?",
      alternativas:[
-       "sim",
-       "não",
+       texto: "sim",
+       texto: "não",
     ]
   }
 ];
