@@ -8,7 +8,11 @@ const perguntas=[
   {
      enunciado: "você gosta de ir ao cinema?",
      alternativas:[
+       {
        texto: "sim",
+    afirmação: "afirmação",
+       }
+         
        texto: "não",
     ]
   }
