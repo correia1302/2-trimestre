@@ -20,15 +20,27 @@ const perguntas=[
 {
      enunciado: "você prefere pizza ou lasanha?",
      alternativas:[
+       {
       texto: "lasanha",
+      afirmação: "afirmação",   
+       },
+       {
        texto: "pizza",
+         afirmação: "afirmação",
+       }
     ]
   }
 {
      enunciado: "você gosta de futebol?",
      alternativas:[
+       {
        texto: "sim",
+         afirmação: "afirmação"
+       },
+       {
        texto: "não",
+         afirmação: "afirmação"
+       },
     ]
   }
 {
@@ -49,7 +61,7 @@ const perguntas=[
  
 let atual=0;
 let perguntaAtual;
-let historiaFinal;
+let historiaFinal = "";
 function mostraPerguntas(){
   perguntaAtual=perguntas[atual];
   caixaPerguntas.textContent=perguntaAtual.enunciado;
@@ -60,10 +72,17 @@ function mostraAlternativas(){
   for(const alternativas of perguntaAtual.alternativas){
   const botaoAlternativas=document.createElement("button");
   botaoAlternativas.textContent=alternativa.texto;
+  botaoAlternativas.addEventListener("click", ()=> respostaSelecionada(alternativa));
   caixaAlternativas.appendChild(botaoAlternativas);
-  
+  }
+}
 
-
+function respostaSelecionada(opcaoSelecionada){
+  const afirmacoes = opcaoSelecionada.afirmacoes;
+  historiaFinal = afirmacoes;
+  atual++;
+  mostraPergunta;
+}
 mostraPergunta();
 
 
