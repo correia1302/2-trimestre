@@ -46,15 +46,27 @@ const perguntas=[
 {
      enunciado: "você tem filhos?",
      alternativas:[
+       {
        texto: "sim",
+         afirmação: "afirmação"
+       },
+       {
        texto: "não",
+         afirmação: "afimação"
+        }
     ]
   }
 {
      enunciado: "você tem animais de estimação?",
      alternativas:[
+       {
        texto: "sim",
+         afirmação: "afirmação"
+       },
+       {
        texto: "não",
+         afirmação: "afirmação"
+       }
     ]
   }
 ];
@@ -62,6 +74,7 @@ const perguntas=[
 let atual=0;
 let perguntaAtual;
 let historiaFinal = "";
+
 function mostraPerguntas(){
   perguntaAtual=perguntas[atual];
   caixaPerguntas.textContent=perguntaAtual.enunciado;
@@ -70,15 +83,15 @@ mostraAlternativas();
 
 function mostraAlternativas(){
   for(const alternativas of perguntaAtual.alternativas){
-  const botaoAlternativas=document.createElement("button");
-  botaoAlternativas.textContent=alternativa.texto;
-  botaoAlternativas.addEventListener("click", ()=> respostaSelecionada(alternativa));
-  caixaAlternativas.appendChild(botaoAlternativas);
+    const botaoAlternativas=document.createElement("button");
+    botaoAlternativas.textContent=alternativa.texto;
+    botaoAlternativas.addEventListener("click", ()=> respostaSelecionada(alternativa));
+    caixaAlternativas.appendChild(botaoAlternativas);
   }
 }
 
 function respostaSelecionada(opcaoSelecionada){
-  const afirmacoes = opcaoSelecionada.afirmacoes;
+  const afirmacoes = opcaoSelecionada.afirmacao;
   historiaFinal = afirmacoes;
   atual++;
   mostraPergunta;
