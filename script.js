@@ -97,7 +97,7 @@ function mostraAlternativas() {
 
 function respostaSelecionada(opcaoSelecionada){
             const afirmações = opcaoSelecionada.afirmações;  mudar para opcaoSelecionada.afirmação
-            historiaFinal = += afirmacoes + " "; 
+            historiaFinal = += afirmações + " "; 
             atual++;
             mostraPergunta();
       }
