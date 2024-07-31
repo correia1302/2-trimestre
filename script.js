@@ -16,7 +16,7 @@ const perguntas=[
        texto: "não",
     afirmação: "afirmação",
        },
-  ]
+    ]
   },
   {
      enunciado: "você prefere pizza ou lasanha?",
