@@ -7,7 +7,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
   {
      enunciado: "você gosta de ir ao cinema?",
-     alternativas:[
+     alternativas: [
        {
        texto: "sim",
     afirmação: "parece que você gosta de ir ao cinema",
@@ -20,7 +20,7 @@ const perguntas = [
   },
   {
      enunciado: "você prefere pizza ou lasanha?",
-     alternativas:[
+     alternativas: [
        {
       texto: "lasanha",
       afirmação: "afirmação",   
@@ -33,7 +33,7 @@ const perguntas = [
   },
 {
      enunciado: "você gosta de futebol?",
-     alternativas:[
+     alternativas: [
        {
        texto: "sim",
          afirmação: "parece que você gosta de futebol"
@@ -46,7 +46,7 @@ const perguntas = [
   },
 {
      enunciado: "você tem filhos?",
-     alternativas:[
+     alternativas: [
        {
        texto: "sim",
          afirmação: "afimação"
@@ -59,7 +59,7 @@ const perguntas = [
   },
 {
      enunciado: "você tem animais de estimação?",
-     alternativas:[
+     alternativas: [
        {
        texto: "sim",
          afirmação: "parece que vc gosta de animais"
