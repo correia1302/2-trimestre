@@ -30,7 +30,7 @@ const perguntas=[
          afirmação: "afirmação",
        }
     ]
-  }
+  },
 {
      enunciado: "você gosta de futebol?",
      alternativas:[
@@ -43,7 +43,7 @@ const perguntas=[
          afirmação: "afirmação"
        },
     ]
-  }
+  },
 {
      enunciado: "você tem filhos?",
      alternativas:[
@@ -56,7 +56,7 @@ const perguntas=[
          afirmação: "você tem cara de novo para ter filhos mesmo"
         }
     ]
-  }
+  },
 {
      enunciado: "você tem animais de estimação?",
      alternativas:[
@@ -69,7 +69,7 @@ const perguntas=[
          afirmação: "afirmação"
        }
     ]
-  }
+  },
 ];
  
 let atual = 0;
@@ -96,8 +96,8 @@ function mostraAlternativas() {
 }
 
 function respostaSelecionada(opcaoSelecionada){
-            const afirmações = opcaoSelecionada.afirmações;  mudar para opcaoSelecionada.afirmação
-            historiaFinal = += afirmações + " "; 
+            const afirmações = opcaoSelecionada.afirmação
+            historiaFinal += afirmações + " "; 
             atual++;
             mostraPergunta();
       }
