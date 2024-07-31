@@ -1,10 +1,10 @@
-const caixaPrincipal=document.querySelector(".caixa-principal");
-const caixaPerguntas=document.querySelector(".caixa-perguntas");
-const caixaAlternativas=document.querySelector(".caixa-alternetivas");
-const caixaResultado=document.querySelector(".caixa-resultado");
-const textoResultado=document.querySelector(".texto-resultado");
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternetivas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
-const perguntas=[
+const perguntas = [
   {
      enunciado: "você gosta de ir ao cinema?",
      alternativas:[
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada){
 function mostraResultado(){
     caixaPerguntas.textContent = "pelas suas respostas você uma pessoa muito animada"
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent ="";
+    caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
