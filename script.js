@@ -10,14 +10,15 @@ const perguntas=[
      alternativas:[
        {
        texto: "sim",
-    afirmação: "afirmação",
+    afirmação: "parece que você gosta de ir ao cinema",
        },
        {   
        texto: "não",
     afirmação: "afirmação",
        },
   ]
-{
+  },
+  {
      enunciado: "você prefere pizza ou lasanha?",
      alternativas:[
        {
@@ -25,7 +26,7 @@ const perguntas=[
       afirmação: "afirmação",   
        },
        {
-       texto: "pizza",
+       texto: "realmente pizza é melhor",
          afirmação: "afirmação",
        }
     ]
@@ -35,7 +36,7 @@ const perguntas=[
      alternativas:[
        {
        texto: "sim",
-         afirmação: "afirmação"
+         afirmação: "parece que você gosta de futebol"
        },
        {
        texto: "não",
@@ -48,11 +49,11 @@ const perguntas=[
      alternativas:[
        {
        texto: "sim",
-         afirmação: "afirmação"
+         afirmação: "afimação"
        },
        {
        texto: "não",
-         afirmação: "afimação"
+         afirmação: "você tem cara de novo para ter filhos mesmo"
         }
     ]
   }
@@ -61,7 +62,7 @@ const perguntas=[
      alternativas:[
        {
        texto: "sim",
-         afirmação: "afirmação"
+         afirmação: "parece que vc gosta de animais"
        },
        {
        texto: "não",
@@ -95,7 +96,7 @@ function mostraAlternativas() {
 }
 
 function respostaSelecionada(opcaoSelecionada){
-            const afirmacoes = opcaoSelecionada.afirmacoes;  mudar para opcaoSelecionada.afirmacao
+            const afirmações = opcaoSelecionada.afirmações;  mudar para opcaoSelecionada.afirmação
             historiaFinal = += afirmacoes + " "; 
             atual++;
             mostraPergunta();
